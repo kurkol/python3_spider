@@ -1,2 +1,3 @@
 用urlopen完成请求-响应过程
-可以用Request构建更复杂的请求
+可以用Request构建稍复杂的请求，比如添加header
+而更高级的请求可以用handler构建opener，比如代理、cookie
