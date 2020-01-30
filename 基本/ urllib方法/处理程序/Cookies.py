@@ -6,3 +6,5 @@ opener = urllib.request.build_opener(handler)
 response = opener.open('http://www.baidu.com')
 for item in cookie:
     print(item.name+"="+item.value)
+
+c=input()
