@@ -1,6 +1,6 @@
 import http.cookiejar, urllib.request
 
-filename = 'cookie.txt'
+filename = 'cookies.txt'
 cookie = http.cookiejar.MozillaCookieJar(filename)
 handler = urllib.request.HTTPCookieProcessor(cookie)
 opener = urllib.request.build_opener(handler)
