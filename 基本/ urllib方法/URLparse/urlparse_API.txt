@@ -1,0 +1,2 @@
+urllib.parse.urlparse(urlstring, scheme='', allow_fragments=True)
+//URL，协议，是否忽略fragment
