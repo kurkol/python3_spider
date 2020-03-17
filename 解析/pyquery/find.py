@@ -13,6 +13,7 @@ html = '''
 from pyquery import PyQuery as pq
 doc = pq(html)
 items = doc('.list')
+#选取class为list的节点
 print(type(items))
 print(items)
 lis = items.find('li')
