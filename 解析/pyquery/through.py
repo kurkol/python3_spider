@@ -15,6 +15,8 @@ html = '''
 from pyquery import PyQuery as pq
 doc = pq(html)
 lis = doc('li').items()
+print(lis)
+#单个节点可以直接输出，多个节点需要遍历获取
 print(type(lis))
 for li in lis:
     print(li, type(li))
