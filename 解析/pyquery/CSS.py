@@ -14,3 +14,12 @@ from pyquery import PyQuery as pq
 doc = pq(html)
 print(doc('#container .list li'))
 print(type(doc('#container .list li')))
+
+a = doc('.item-0.active a')
+print(a.attr('href'))
+#获取属性，也可用print(a.attr.href)
+#若是选中多个节点可用遍历,for item in a.items():print(item.attr.href)
+
+print(a.text())
+print(a.html())
+#获取文本；获取HTML文本
