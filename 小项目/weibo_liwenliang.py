@@ -42,6 +42,17 @@ def parse_page(json):
             weibo['reposts'] = item.get('reposts_count')
             yield weibo
 
+#into mongodb
+from pymongo import MongoClient
+
+client = MongoClient()
+db = client['weibo']
+collection = db['liwenliang']
+
+def save_to_mongo(result):
+    if collection.insert(result):
+        print('Saved to Mongo')
+
 #遍历微博
 if __name__ == '__main__':
     for page in range(1,11):
@@ -49,3 +60,4 @@ if __name__ == '__main__':
         results = parse_page(json)
         for result in results:
             print(result)
+            save_to_mongo(result)
