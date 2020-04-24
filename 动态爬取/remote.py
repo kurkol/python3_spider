@@ -16,3 +16,5 @@ button.click()
 input.clear()
 
 browser.close()
+
+#more remote: https://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement
